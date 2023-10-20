@@ -6,12 +6,6 @@ export default function ClearButton({output, setOutput}) {
         let dispCalc=document.getElementById('displayCalc');
         dispCalc.innerHTML=(output);
 
-    // const buttonEgal = (
-    //     <button
-    //             onClick={() => evalOp(output)}> Click
-    //     </button>
-    //  )  
-
     }
     return (
         <button id="clear"

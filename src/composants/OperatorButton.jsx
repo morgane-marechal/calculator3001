@@ -4,8 +4,6 @@ import { useState } from 'react'
 
 
 export default function OperatorButton({output, setOutput}) {
-    //console.log(props);
-    //const [ output, setOutput] = useState("");
 
     const btnOp = ['+', '-', '*', '/'];
 
@@ -26,8 +24,6 @@ export default function OperatorButton({output, setOutput}) {
     ))
 
     return (
-       // <button id={props.value} onClick={props.onClick}>{value}</button>
        buttonsOperator
-        
     )
   }

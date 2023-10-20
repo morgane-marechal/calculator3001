@@ -155,7 +155,7 @@ button:focus-visible {
     margin-top:10px;
   }
 
-  #egal, #clear{
+  #egal{
     margin:5px 10px 5px 10px;
     font-family:'Orbitron', sans-serif;
     height:70px;
@@ -164,7 +164,17 @@ button:focus-visible {
     background: #5f5b60;
     box-shadow:  1px 1px 3px #bcb0bf,
                  -1px -1px 3px #ffffff;
+  }
 
+  #clear{
+    margin:5px 10px 5px 10px;
+    font-family:'Orbitron', sans-serif;
+    height:70px;
+    width:200px;
+    color: #d7cebf;
+    background: #c87969;
+    box-shadow:  1px 1px 3px #bcb0bf,
+                 -1px -1px 3px #ffffff;
   }
 
   #egal:hover, #clear:hover{
@@ -309,7 +319,7 @@ button:focus-visible {
       margin-top:10px;
     }
   
-    #egal, #clear{
+    #egal{
       margin:5px 10px 5px 10px;
       font-family:'Orbitron', sans-serif;
       height:70px;
@@ -317,7 +327,16 @@ button:focus-visible {
       background: #faebff;
       box-shadow:  1px 1px 3px #bcb0bf,
                    -1px -1px 3px #ffffff;
-  
+    }
+
+    #clear{
+      margin:5px 10px 5px 10px;
+      font-family:'Orbitron', sans-serif;
+      height:70px;
+      width:200px;
+      background: #efdcc9;
+      box-shadow:  1px 1px 3px #bcb0bf,
+                   -1px -1px 3px #ffffff;
     }
   
     #egal:hover, #clear:hover{

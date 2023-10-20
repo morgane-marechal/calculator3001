@@ -6,13 +6,8 @@ export default function EqualButton({output, setOutput}) {
         console.log(output);
         let dispCalc=document.getElementById('displayCalc');
         dispCalc.innerHTML=(output);
-    // const buttonEgal = (
-    //     <button
-    //             onClick={() => evalOp(output)}> Click
-    //     </button>
-    //  )  
-
 }
+
     return (
         <button id="egal"
             onClick={() => evalOp(outputChange)}> Equal
