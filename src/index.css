@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;500&family=Press+Start+2P&display=swap');
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+@media (max-width: 460px) {
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  font-family: 'Fira Sans', sans-serif;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #ffffff;
+}
+button:focus,
+button:focus-visible {
+  outline: 1px ridge rgba(206, 155, 227, 0.6);
+}
+
+/* @media (prefers-color-scheme: light) { */
+  :root {
+    color: #6b879f;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #b7b1b7;;
+  
+  }
+  .calculator{
+    width:90%;
+    background-color: #6d6d6f;
+    height:450px;
+    padding:15px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow:  20px 20px 60px #d9d9d9,
+             -20px -20px 60px #ffffff;
+  }
+
+  #totalDisplay{
+    height:50px;
+    font-size: 1.5rem;
+    border-radius: 8px 8px 0px 0px;
+  }
+
+  #displayCalc{
+    height:30px;
+    border-radius:0px 0px 8px 8px;
+  }
+
+  #totalDisplay, #displayCalc{
+    font-family:'Orbitron', sans-serif;
+    width:99%;
+    border: 1px solid transparent;
+    text-align:right;
+    padding-right: 10px;
+    background: #faebff;
+    box-shadow: inset 5px 0px 3px #bcb0bf,
+            inset -1px -1px 3px #ffffff;
+    border:none;
+    
+  }
+
+  .number{
+    width:18%;
+    font-family:'Orbitron', sans-serif;
+    margin:5px 2px;
+    color: #bfccd7;
+    background: #5f5b60;
+    box-shadow:  1px 1px 3px #bcb0bf,
+                 -1px -1px 3px #ffffff;
+  }
+
+  .number:hover{
+    background: #ffffff;
+    box-shadow:  1px 1px 3px #bcb0bf,
+                 -1px -1px 3px #ffffff;
+  }
+
+  .operatorButton{
+    width:22%;
+    margin:5px 2px;
+    color: #bfccd7;
+    background: #5f5b60;
+    font-family:'Orbitron', sans-serif;
+    box-shadow:  1px 1px 3px #bcb0bf,
+                 -1px -1px 3px #ffffff;
+  }
+
+  .operatorButton:hover{
+    background: #ffffff;
+    box-shadow:  1px 1px 3px #bcb0bf,
+                 -1px -1px 3px #ffffff;
+  }
+
+  #operatorsSpace{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+
+
+  #numbersSpace {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top:10px;
+  }
+
+  #egal, #clear{
+    margin:5px 10px 5px 10px;
+    font-family:'Orbitron', sans-serif;
+    height:70px;
+    width:200px;
+    color: #bfccd7;
+    background: #5f5b60;
+    box-shadow:  1px 1px 3px #bcb0bf,
+                 -1px -1px 3px #ffffff;
+
+  }
+
+  #egal:hover, #clear:hover{
+    background: #ffffff;
+    box-shadow:  1px 1px 3px #bcb0bf,
+                 -1px -1px 3px #ffffff;
+  }
+
+}
+
+@media (min-width: 460px) {
+  body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+  }
+  
+  button {
+    color: #6b879f;
+    font-family: 'Fira Sans', sans-serif;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+  button:hover {
+    border-color: #ffffff;
+  }
+  button:focus,
+  button:focus-visible {
+    outline: 1px ridge rgba(206, 155, 227, 0.6);
+  }
+  
+  /* @media (prefers-color-scheme: light) { */
+    :root {
+      color: #213547;
+      background-color: #ffffff;
+    }
+    a:hover {
+      color: #747bff;
+    }
+    button {
+      background-color: #b7b1b7;;
+    
+    }
+    .calculator{
+      width:100%;
+      padding:10px;
+      background-color: #eaf9ff;
+      height:350px;
+      padding:2%;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 5px;
+      box-shadow:  20px 20px 60px #d9d9d9,
+               -20px -20px 60px #ffffff;
+    }
+  
+    #totalDisplay{
+      height:50px;
+      font-size: 1.5rem;
+      border-radius: 8px 8px 0px 0px;
+    }
+  
+    #displayCalc{
+      height:30px;
+      border-radius:0px 0px 8px 8px;
+    }
+  
+    #totalDisplay, #displayCalc{
+      color: #6b879f;
+      font-family:'Orbitron', sans-serif;
+      width:99%;
+      border: 1px solid transparent;
+      text-align:right;
+      padding-right: 10px;
+      background: #faebff;
+      box-shadow: inset 5px 0px 3px #bcb0bf,
+              inset -1px -1px 3px #ffffff;
+      border:none;
+      
+    }
+  
+    .number{
+      width:18%;
+      font-family:'Orbitron', sans-serif;
+      margin:5px 2px;
+      background: #faebff;
+      box-shadow:  1px 1px 3px #bcb0bf,
+                   -1px -1px 3px #ffffff;
+    }
+  
+    .number:hover{
+      background: #ffffff;
+      box-shadow:  1px 1px 3px #bcb0bf,
+                   -1px -1px 3px #ffffff;
+    }
+  
+    .operatorButton{
+      width:22%;
+      margin:5px 2px;
+      font-family:'Orbitron', sans-serif;
+      background: #faebff;
+      box-shadow:  1px 1px 3px #bcb0bf,
+                   -1px -1px 3px #ffffff;
+    }
+  
+    .operatorButton:hover{
+      background: #ffffff;
+      box-shadow:  1px 1px 3px #bcb0bf,
+                   -1px -1px 3px #ffffff;
+    }
+  
+    #operatorsSpace{
+      width:100%;
+      display:flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  
+  
+  
+    #numbersSpace {
+      display:flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top:10px;
+    }
+  
+    #egal, #clear{
+      margin:5px 10px 5px 10px;
+      font-family:'Orbitron', sans-serif;
+      height:70px;
+      width:200px;
+      background: #faebff;
+      box-shadow:  1px 1px 3px #bcb0bf,
+                   -1px -1px 3px #ffffff;
+  
+    }
+  
+    #egal:hover, #clear:hover{
+      background: #ffffff;
+      box-shadow:  1px 1px 3px #bcb0bf,
+                   -1px -1px 3px #ffffff;
+    }
+
+}
+
+
